@@ -1,0 +1,14 @@
+Thu 24 Jul 2025 10:20:12-Test_bridgeToken.py-[line:25]-INFO-[日志信息]:开始执行用例：Test_bridgeToken.test_one
+Thu 24 Jul 2025 10:20:13-Test_bridgeToken.py-[line:22]-INFO-[日志信息]:✅ 成功连接到 RPC 服务器
+Thu 24 Jul 2025 10:20:13-Test_bridgeToken.py-[line:47]-INFO-[日志信息]:{'requests': {'name': '跨链', 'contractAddress': '0x', 'network': 'BSC', 'methods': 'bridgeToken', 'data': {'created_at': '2022-08-18T08:55:37.021Z', 'expired_at': '2022-11-16T08:55:37.021Z', 'face_value': 10, 'id': 0, 'num': 10, 'state': 0}}}
+Thu 24 Jul 2025 10:20:13-Test_bridgeToken.py-[line:48]-INFO-[日志信息]:这是 test_one 的日志
+Thu 24 Jul 2025 10:20:13-Test_bridgeToken.py-[line:50]-INFO-[日志信息]:测试地址:0x84A92C50eafA5A38c35e7123bf394695830c17D1
+Thu 24 Jul 2025 10:20:13-Test_bridgeToken.py-[line:51]-INFO-[日志信息]:余额:0.299979
+Thu 24 Jul 2025 10:20:13-Test_bridgeToken.py-[line:42]-INFO-[日志信息]:用例执行结束
+Thu 24 Jul 2025 10:20:13-Test_bridgeToken.py-[line:25]-INFO-[日志信息]:开始执行用例：Test_bridgeToken.test_one
+Thu 24 Jul 2025 10:20:14-Test_bridgeToken.py-[line:22]-INFO-[日志信息]:✅ 成功连接到 RPC 服务器
+Thu 24 Jul 2025 10:20:14-Test_bridgeToken.py-[line:47]-INFO-[日志信息]:{'requests': {'name': '跨链2', 'contractAddress': '0x', 'network': 'BSC', 'methods': 'bridgeToken', 'data': {'created_at': '2022-08-18T08:55:37.021Z', 'expired_at': '2022-11-16T08:55:37.021Z', 'face_value': 10, 'id': 0, 'num': 10, 'state': 0}}}
+Thu 24 Jul 2025 10:20:14-Test_bridgeToken.py-[line:48]-INFO-[日志信息]:这是 test_one 的日志
+Thu 24 Jul 2025 10:20:14-Test_bridgeToken.py-[line:50]-INFO-[日志信息]:测试地址:0x84A92C50eafA5A38c35e7123bf394695830c17D1
+Thu 24 Jul 2025 10:20:14-Test_bridgeToken.py-[line:51]-INFO-[日志信息]:余额:0.299979
+Thu 24 Jul 2025 10:20:14-Test_bridgeToken.py-[line:42]-INFO-[日志信息]:用例执行结束

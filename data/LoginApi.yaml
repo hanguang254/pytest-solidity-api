@@ -1,0 +1,33 @@
+-
+  requests:
+    name: 登录成功
+    method: post
+    url: http://160.116.208.79:8090/api/user/login
+    headers:
+    data:
+      username: admin
+      password: admin888
+    expected:
+      code: 20000
+-
+  requests:
+    name: 登录失败
+    method: post
+    url: http://160.116.208.79:8090/api/user/login
+    headers:
+    data:
+      username: admin
+      password: admin
+    expected:
+      code: 20000
+-
+  requests:
+    name: 登录失败2
+    method: post
+    url: http://160.116.208.79:8090/api/user/login
+    headers:
+    data:
+      username:
+      password: admin
+    expected:
+      code: 20000

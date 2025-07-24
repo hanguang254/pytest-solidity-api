@@ -1,0 +1,26 @@
+-
+  requests:
+    name: 跨链
+    contractAddress: 0x
+    network: BSC
+    methods: bridgeToken
+    data:
+        created_at: "2022-08-18T08:55:37.021Z"
+        expired_at: "2022-11-16T08:55:37.021Z"
+        face_value: 10
+        id: 0
+        num: 10
+        state: 0
+-
+  requests:
+    name: 跨链2
+    contractAddress: 0x
+    network: BSC
+    methods: bridgeToken
+    data:
+        created_at: "2022-08-18T08:55:37.021Z"
+        expired_at: "2022-11-16T08:55:37.021Z"
+        face_value: 10
+        id: 0
+        num: 10
+        state: 0

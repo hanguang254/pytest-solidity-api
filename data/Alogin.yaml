@@ -1,0 +1,10 @@
+requests:
+  name: 登录成功
+  method: post
+  url: http://160.116.208.79:8090/api/user/login
+  headers:
+
+  data:
+    username: admin
+    password: admin888
+  expected:
