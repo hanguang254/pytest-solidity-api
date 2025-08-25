@@ -38,13 +38,16 @@ class Test_bridgeToken:
         self.web3 = RpcConnect().connect_rpc(url=self.BSC_TEST_RPC,log=self.logger)
         self.account = RpcConnect().account(web3=self.web3,key=self.key)
 
+
     def teardown_method(self, method):
         self.logger.info("用例执行结束")
 
-    @pytest.mark.parametrize('key',data)
-    def test_one(self,key):
+
+
+    @pytest.mark.parametrize('value',data)
+    def test_one(self,value):
         try:
-            self.logger.info(key)
+            self.logger.info(value)
             self.logger.info("这是 test_one 的日志")
             balance = self.web3.eth.get_balance("0x84A92C50eafA5A38c35e7123bf394695830c17D1")
             self.logger.info(f"测试地址:{self.account.address}")
