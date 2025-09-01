@@ -10,7 +10,7 @@ import yaml
 import jsonpath
 
 
-class ReadYaml():
+class ReadYaml:
 
     # #必须要一个参数  文件
     # def __init__(self,filename):
@@ -115,6 +115,28 @@ class ReadYaml():
         except Exception:
             print('错误：{}'.format(Exception))
 
+    # 遍历字典 获取key值为多少
+    def find_value(self,data,target_key):
+        '''
+        data:json返回值
+        :param target_key: 获取key
+        :return:
+        '''
+        """递归查找字典或字典列表中的目标键"""
+        if isinstance(data, dict):
+            for key, value in data.items():
+                if key == target_key:
+                    return value
+                elif isinstance(value, (dict, list)):
+                    result = ReadYaml().find_value(value, target_key)
+                    if result is not None:
+                        return result
+        elif isinstance(data, list):
+            for item in data:
+                result = ReadYaml().find_value(item, target_key)
+                if result is not None:
+                    return result
+        return None
 
 
 

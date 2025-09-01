@@ -99,7 +99,7 @@ class RpcConnect:
         print(account.address, f"余额{web3.from_wei(balance, 'ether')}")
         return web3.from_wei(balance, 'ether')
     # 遍历字典
-    def find_value(data, target_key):
+    def find_value(self,data,target_key):
         '''
         data:json返回值
         :param target_key: 获取key
