@@ -11,8 +11,10 @@ import time
 
 
 def creater_file(suffix=""):
-    # 日志目录
-    log_dir = os.path.join(os.path.dirname(os.getcwd()), 'logout')
+    # 获取项目根目录（Logger.py 在 common 下，不管在哪执行都能定位到 根目录下）
+    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    log_dir = os.path.join(project_root, 'logout')
+
     if not os.path.exists(log_dir):
         os.mkdir(log_dir)
 

@@ -10,9 +10,12 @@ import pytest
 file_name= "OW_test.py"
 # 获取绝对路径
 current_path = os.path.dirname(os.path.abspath(__file__))
+#上一级
 project_path = os.path.dirname(current_path)
-json_report_path = os.path.join(project_path, 'logout', 'json')
-html_report_path = os.path.join(project_path, 'logout', 'html')
+parent_path = os.path.dirname(project_path)
+
+json_report_path = os.path.join(parent_path, 'logout', 'json')
+html_report_path = os.path.join(parent_path, 'logout', 'html')
 
 os.makedirs(json_report_path, exist_ok=True)
 os.makedirs(html_report_path, exist_ok=True)

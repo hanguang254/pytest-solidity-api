@@ -35,6 +35,7 @@ class Test_OW:
         class_name = self.__class__.__name__        # Test_add
         method_name = method.__name__               # test_one
         file = os.path.basename(__file__)
+        print(file)
         log = Log(file, suffix=f"{class_name}_{method_name}")
         self.logger = log.Logger()
         self.logger.info(f"开始执行用例：{class_name}.{method_name}")
