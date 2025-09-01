@@ -7,7 +7,6 @@
 import shutil
 import subprocess
 from time import sleep
-
 # 导入selenium的web驱动
 from selenium import webdriver
 # 导入selenium的chrome服务
@@ -23,8 +22,12 @@ from common.Logger import Log
 from common.ReadYaml import ReadYaml
 from common.rpc_account import RpcConnect
 import allure
+from data.get_local import get_yaml_path
 
-data = ReadYaml().red_yaml("../data/contractApi.yaml")
+
+# 读取用例
+yaml_path= get_yaml_path("contractApi.yaml")
+data = ReadYaml().red_yaml(yaml_path)
 
 class Test_OW:
 
@@ -50,7 +53,7 @@ class Test_OW:
         # 关闭浏览器
         self.driver.quit()
 
-
+    @allure.story("用例一")
     def test_one(self):
         try:
             Button  = self.driver.find_element("xpath",'//*[@id="root"]/div/div/main/div/div[1]/div/div/div[3]/button')
@@ -64,7 +67,7 @@ class Test_OW:
             # 全部错误日志
             self.logger.exception(e)
             raise
-
+    @allure.story("用例二")
     def test_two(self):
         self.logger.info("用例二")
 

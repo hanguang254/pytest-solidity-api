@@ -11,8 +11,11 @@ from dotenv import load_dotenv
 from common.Logger import Log
 from common.ReadYaml import ReadYaml
 from common.rpc_account import RpcConnect
+from data.get_local import get_yaml_path
 
-data = ReadYaml().red_yaml("../data/contractApi.yaml")
+# 读取用例
+yaml_path= get_yaml_path("contractApi.yaml")
+data = ReadYaml().red_yaml(yaml_path)
 
 class Test_bridgeToken:
 

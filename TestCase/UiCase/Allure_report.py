@@ -1,3 +1,9 @@
+'''
+@Project  ：pytest-solidity-api 
+@File     ：Allure_report
+@Author   ：le
+@Date     ：2025/9/1 17:15
+'''
 import os
 import pytest
 
@@ -14,4 +20,3 @@ os.makedirs(html_report_path, exist_ok=True)
 pytest.main(["-sv", "--alluredir=%s" % json_report_path, "--clean-alluredir", f"{file_name}"])     #测试用例文件
 os.system("allure generate --clean %s -o %s" % (json_report_path, html_report_path))
 os.system(f'allure open "{html_report_path}"')
-

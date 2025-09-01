@@ -7,7 +7,7 @@
 import pytest
 from common import get_token
 from common import ReadYaml
-
+from data.get_local import get_yaml_path
 
 """
 conftest.py文件中Fixture的scope参数为session，那么所有的测试文件执行前（后）执行一次conftest.py文件中的Fixture。
@@ -17,7 +17,8 @@ conftest.py文件中Fixture的scope参数为function，那么所有文件的测�
 """
 @pytest.fixture(scope='session')
 def login_token():
-    data  = ReadYaml.ReadYaml().red_yaml('../data/Alogin.yaml')
+    yamlpath = get_yaml_path("Alogin.yaml")
+    data  = ReadYaml.ReadYaml().red_yaml(yamlpath)
     # print(data)
     token = get_token.login_Token().get_token(data)
 
