@@ -1,5 +1,5 @@
-## pytest 接口模板
-
+## pytest 最新模板集合API与UI模板
+### 集合Allure报告以及部分方法
 
 内含日志模板
 
@@ -12,3 +12,4 @@ pip install -r requirements.txt
 
 
 ### pytest.main(['test_add.py','-qsv'])
+
